@@ -1,60 +1,3 @@
-.all-products-container .account-buttons-header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 50px 150px 90px 150px;
-    margin: 0px 100px;
-    border-radius: 24px 24px 0px 0px;
-   
-}
-
-.all-products-container .account-buttons-header div{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.all-products-container .account-buttons-header h1{
-    text-align: center;
-    color:#004F3C;
-    font-size: 35px;
-    margin: 0;
-}
-
-.all-products-container .account-buttons-header div button{
-    border-color: #004F3C;
-    border: 3px solid #004F3C;
-    border-radius: 8px;
-    font-size: 18px;
-    width: 100px;
-    height: 40px;
-    color: #004F3C;
-    font-weight: 500;
-    background-color: #efefef;
-    
-}
-
-.all-products-container .account-buttons-header div .shopping-cart-counter{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 80px;
-    font-weight: 500;
-}
-
-.all-products-container .account-buttons-header div .favorites-counter{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 80px;
-    font-weight: 500;
-}
-
-.all-products-container .account-buttons-header div button p{
-    padding-left: 10px;
-    padding-right: 10px;
-}
 
 .all-products-container .filter-button{
     display: flex;
@@ -67,44 +10,51 @@
     
 }
 
-.all-products-container .filter-button button{
+.all-products-container .filter-button div{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    width: 170px;
+    /* justify-content: space-between; */
+    /* width: 200px; */
     height: 40px;    
     border: 2px solid #313131;
     background-color: #efefef;
     border-radius: 4px;
     
+}
+
+.all-products-container .filter-button div select {
+    height: 36px;
+    width: 90px;
+    border: 2px solid #313131;
+    background-color: #efefef;
+    border-radius: 4px;
+    text-align: center;
+    padding: 0px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 5px;
+    border: none;
     
 }
 
-.all-products-container .filter-button button p{
+
+.all-products-container .filter-button div label p{ 
     text-align: center;
     padding: 10px;
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: 600;
 }
 
-.all-products-container .filter-button button svg{
+/* .all-products-container .filter-button div select svg{
     margin: 0px;
     border: 2px solid #313131;
+    padding-right: 5px;
 }
+ */
 
 
-.all-products-container {
-    width: 100%;
-    padding: 50px;
-    margin: 0;
-    background-color: #004F3C;
-}
-
-.all-products-container header{
-    display: flex;
-    align-items: center;
-    background-color: #D9D9D9;
-}
+/* 
 
 .all-products-container header span{
     font-size: 20px;
@@ -142,12 +92,13 @@
     margin-top: 80px;
     margin-bottom: 24px;
 }
-
+ */
 .all-products-container ul {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 35px;
+    gap:115px ;
     list-style: none;
+    align-items: center;
     padding: 50px 150px ;
     margin: 0 100px;
     background-color: #D9D9D9;
@@ -155,19 +106,24 @@
 }
 
 .all-products-container ul li{
-    width: 300px;
-    height: 340px;
-    background-color: #efefef;
-    border-radius: 8px;
-    position: relative;
-    border: 2px solid #313131;
+    width: 240px;
+    height: 272px;
+    background: #efefef;  
+    border-radius:  4px 4px 0px 0px ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    /* border: 2px solid #313131; */
     /* box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5); */
+    border: 1px solid #313131;
+    box-shadow: 0px 0px 1px 1px  rgba(0, 0, 0, 0.5);
 }
 
 .all-products-container ul li img{
     padding-left: 0px;
-    width: 250px;
-    height: 225px;
+    width: 215px;
+    height: 215px;
+    margin: 10px;
 }
 
 .all-products-container ul li div {
@@ -176,8 +132,9 @@
     align-items: center;
     /* justify-content: space-between; */
     height: 40px;
-    width: 300px;
-    margin-top: 20px;
+    width: 240px;
+    margin-top: 13px;
+    
 }
 
 .all-products-container ul li button {
@@ -185,37 +142,31 @@
     height: 60px;
     padding: 15px;
     /* margin-left: 30px; */
-    background: transparent;  
+    background-color: #efefef;  
+    /* border: 1px solid #313131;
+    box-shadow: 0px 0px 0px 1px  rgba(0, 0, 0, 0.5); */
     border: 1px solid #313131;
-    box-shadow: 0px 0px 0px 1px  rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 1px 1px  rgba(0, 0, 0, 0.5);
 }
 
 .all-products-container ul li .last-button {
-    border-radius: 0 0 8px 0;
+    border-radius: 0 0 4px 0;
     width: 57px;
+    border: 1px solid #313131;
+    background-color: #efefef;
+    box-shadow: 0px 0px 1px 1px  rgba(0, 0, 0, 0.5);
 }
 
-.all-products-container ul li button + button{
-    top: 50px;  
-}
 
-.all-products-container ul li button:hover{
-    opacity: 0.8;  
-}
 
 .all-products-container ul li strong{
     display: block;
-    margin-bottom: 10px;
     margin-top: 10px;
-    margin-left: 40px;
+    margin-right: 120px;
     color: #000000;
     font-size: 16px;
 }
 
-.all-products-container ul li p + strong{
-    /* margin-top: 32px; */
-
-}
 
 .all-products-container ul li p {
     width: 180px;
@@ -224,49 +175,9 @@
     line-height: 21px;
     font-size: 16px;
     padding: 20px;
+    background-color: #efefef;
     border: 1px solid #313131;
-    box-shadow: 0px 0px 0px 1px  rgba(0, 0, 0, 0.5);
-    border-radius: 0 0 0 8px;
+    box-shadow: 0px 0px 1px 1px  rgba(0, 0, 0, 0.5);
+    border-radius: 0 0 0 4px;
 }
 
-.all-products-container footer{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 150px 50px 150px;
-    margin: 0px 100px;
-    background-color: #D9D9D9;
-    border-radius: 0px 0px 24px 24px;
-    
-}
-
-.all-products-container footer button{
-    width: 250px;
-    height: 40px;    
-    border-color: #004F3C;
-    border: 3px solid #004F3C;
-    border-radius: 8px;
-    font-size: 18px;
-    color: #004F3C;
-    font-weight: 500;
-    background-color: #efefef;
-    
-}
-
-
-
-
-
-.all-products-container .left-footer-buttons button{
-    width: 170px;
-    height: 40px;    
-    margin-right: 30px;
-    border-color: #004F3C;
-    border: 3px solid #004F3C;
-    border-radius: 8px;
-    font-size: 18px;
-    color: #004F3C;
-    font-weight: 500;
-    background-color: #efefef;
-}

@@ -1,0 +1,133 @@
+.product-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 580px;
+    padding: 30px 270px;
+    margin: 0 100px;
+    background-color: #d9d9d9;
+
+}
+
+.product-container .product-photos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-container .product-photos .biggest-photo{
+    height: 350px;
+    width: 350px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #313131;
+    box-shadow: 0px 0px 1px 1px  rgba(0, 0, 0, 0.5);
+}
+
+.product-container .product-photos .smallest-photos{
+    display: flex;
+    flex-direction: row;
+}
+
+.product-container .product-photos .smallest-photos img{
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #313131;
+    box-shadow: 0px 0px 1px 1px  rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.product-container .product-info {
+    width: 400px;
+
+
+}
+
+.product-container .product-info h1{
+    color: #004F3C;
+    padding-bottom: 60px;
+    font-size: 35px;
+}
+
+.product-container .product-info h2{
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.product-container .product-info h3{
+    padding-bottom: 40px;
+    padding-top: 40px;
+    font-size: 25px;
+}
+
+.product-container .product-info .radio-buttons {
+    padding-bottom: 60px;
+
+}
+
+.product-container .product-info .radio-buttons input{
+    width: 15px;
+    height: 15px;
+    margin: 10px;
+
+}
+
+.product-container .product-info .radio-buttons label{
+
+    padding-right: 20px;
+    font-size: 20px;
+
+}
+
+.product-container .product-info .product-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.product-container .product-info .product-buttons .buy-button{
+    border-radius: 4px;
+    font-size: 20px;
+    width: 120px;
+    height: 50px;
+    color: #efefef;
+    border: none;
+    font-weight: 500;
+    background-color: #004F3C;
+    margin-right: 25px;
+}
+
+.product-container .product-info .product-buttons .fav-button{
+    border: none;
+    background-color: transparent;
+}
+
+.product-container .product-info .product-buttons .share-button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-color: #004F3C;
+    border: 3px solid #004F3C;
+    margin-left: 30px;
+    border-radius: 4px;
+    font-size: 18px;
+    width: 110px;
+    height: 50px;
+    color: #004F3C;
+    font-weight: 500;
+    background: transparent;
+}
+
+.product-container .product-info .product-buttons .share-button p{
+    padding: 10px;
+}
+
+
+
+
+

@@ -5,7 +5,8 @@ import Login from './pages/Login';
 import Books from './pages/Books';
 import AllProducts from './pages/AllProducts'
 import CreateAccount from './pages/CreateAccount';
-import NewBook from './pages/NewBook';
+/* import NewBook from './pages/NewBook'; */
+import Product from './pages/Product';
 
 
 export default function Routes() {
@@ -16,7 +17,8 @@ export default function Routes() {
                 <Route path="/books" component={Books}/>
                 <Route path="/allproducts" component={AllProducts}/>
                 <Route path="/createaccount" component={CreateAccount}/>
-                <Route path="/book/new/:bookId" component={NewBook}/>
+                <Route path="/product" component={Product}/>
+                {/* <Route path="/book/new/:bookId" component={NewBook}/> */}
             </Switch>
         </BrowserRouter>
     );

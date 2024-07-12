@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { FiPower, FiEdit, FiShoppingCart, FiHeart, FiArrowDown } from 'react-icons/fi'
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 
 import api from '../../services/api'
 
 import './styles.css';
 
 import logoImage from '../../assets/logo.webp'
+
 
 export default function AllProducts() {
 
@@ -65,31 +68,38 @@ export default function AllProducts() {
     }, [])
 
     return (
-        <div className="all-products-container">
-            <header className='account-buttons-header'>
-                <h1>Generic Store Name</h1>
-                <div >
-                    <button className='shopping-cart-counter' >
-                        <p>10</p>
-                        <FiHeart size={20} color="#004F3C" />
-                    </button>
-                    <button className='favorites-counter'>
-                        <p>10</p>
-                        <FiShoppingCart size={20} color="#004F3C" />
-                    </button>
-                    <button>my profile</button>
-                    <button>logout</button>
-                </div>
-            </header>
+            <>
+            <Header/>
+            <div className="all-products-container">
             <div className="filter-button">
-                <button className='order-by'>
+                <div className='left-buttons'>
+                <label for="order-by-label"><p>Best Sellers:</p></label>
+                <select className="order-by" id="order-by-label">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </select>
+                </div>
+
+                <div className='right-buttons' >
+                <label for="items-collection-label"><p>All Items:</p></label>
+
+                <select className="items-collection" id="items-collection-label">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </select>
+                </div>
+                {/* <button className='order-by'>
                     <p>Best Sellers</p>
                     <FiArrowDown size={40} color="#000000" />
                 </button>
                 <button className='items-collection'>
                     <p>All Items</p>
                     <FiArrowDown size={40} color="#000000" />
-                </button>
+                </button> */}
             </div>
 
             {/*  <img src={logoImage} alt="Erudio" />
@@ -124,16 +134,9 @@ export default function AllProducts() {
                     </li>
                 ))}
             </ul>
-
-            <footer>
-                <div className='left-footer-buttons'>
-                    <button>About the store</button>
-                    <button>Talk with me</button>
-                </div>
-                <button>Request a custom sculpture</button>
-            </footer>
-
+            </div>
+            <Footer/>
             {/* <button className="button" onClick={fetchMoreBooks} type="button">Load More</button> */}
-        </div>
+            </>
     );
 }

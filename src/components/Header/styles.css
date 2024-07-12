@@ -1,0 +1,58 @@
+.account-buttons-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 150px 90px 150px;
+    margin: 0px 100px;
+    background-color: #D9D9D9;
+   
+}
+
+.account-buttons-header div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.account-buttons-header h1{
+    text-align: center;
+    color:#004F3C;
+    font-size: 35px;
+    margin: 0;
+}
+
+.account-buttons-header div button{
+    border-color: #004F3C;
+    border: 3px solid #004F3C;
+    border-radius: 8px;
+    font-size: 18px;
+    width: 100px;
+    height: 40px;
+    color: #004F3C;
+    font-weight: 500;
+    background-color: #d9d9d9;
+    margin-left: 16px;
+    
+}
+
+.account-buttons-header div .shopping-cart-counter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80px;
+    font-weight: 500;
+}
+
+.account-buttons-header div .favorites-counter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80px;
+    font-weight: 500;
+}
+
+.account-buttons-header div button p{
+    padding-left: 10px;
+    padding-right: 10px;
+}

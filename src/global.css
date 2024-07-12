@@ -9,8 +9,11 @@
 
 body {
     font: 400 14px Roboto, sans-serif;
-    background:  #F0F0F5;
     -webkit-font-smoothing: antialiased;
+    width: 100%;
+    padding:  0px 50px;
+    margin: 0;
+    background-color: #004F3C; 
 }
 
 input, button, textarea {

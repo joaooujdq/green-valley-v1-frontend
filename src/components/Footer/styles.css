@@ -1,0 +1,37 @@
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 150px 50px 150px;
+    margin: 0px 100px;
+    background-color: #D9D9D9;
+    
+    
+}
+
+footer button{
+    width: 250px;
+    height: 40px;    
+    border-color: #004F3C;
+    border: 3px solid #004F3C;
+    border-radius: 8px;
+    font-size: 18px;
+    color: #004F3C;
+    font-weight: 500;
+    background-color: #d9d9d9;
+    
+}
+
+.left-footer-buttons button{
+    width: 170px;
+    height: 40px;    
+    margin-right: 30px;
+    border-color: #004F3C;
+    border: 3px solid #004F3C;
+    border-radius: 8px;
+    font-size: 18px;
+    color: #004F3C;
+    font-weight: 500;
+    background-color: #d9d9d9;
+}
