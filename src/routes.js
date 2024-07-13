@@ -7,6 +7,8 @@ import AllProducts from './pages/AllProducts'
 import CreateAccount from './pages/CreateAccount';
 /* import NewBook from './pages/NewBook'; */
 import Product from './pages/Product';
+import Favorites from './pages/Favorites';
+import ShoppingCart from './pages/ShoppingCart';
 
 
 export default function Routes() {
@@ -18,6 +20,8 @@ export default function Routes() {
                 <Route path="/allproducts" component={AllProducts}/>
                 <Route path="/createaccount" component={CreateAccount}/>
                 <Route path="/product" component={Product}/>
+                <Route path="/favorites" component={Favorites}/>
+                <Route path="/shoppingcart" component={ShoppingCart}/>
                 {/* <Route path="/book/new/:bookId" component={NewBook}/> */}
             </Switch>
         </BrowserRouter>

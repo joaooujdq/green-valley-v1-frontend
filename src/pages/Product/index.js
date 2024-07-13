@@ -13,17 +13,6 @@ import Header from '../../components/Header';
 
 export default function Product() {
 
-    const [id, setId] = useState(null);
-    const [author, setAuthor] = useState('');
-    const [launchDate, setLaunchDate] = useState('');
-    const [price, setPrice] = useState('');
-    const [title, setTitle] = useState('');
-
-
-    const username = localStorage.getItem('username');
-
-
-
     return (
         <>
             <Header />
