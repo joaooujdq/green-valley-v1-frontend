@@ -24,7 +24,7 @@ export default function Favorites() {
             },
             params: {
                 page: page,
-                limit: 7,
+                limit: 6,
                 direction: 'desc'
             }
         });

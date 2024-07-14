@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useHistory, Link, useParams } from 'react-router-dom';
-import { FiArrowLeft, FiDelete, FiShare2, FiTrash2 } from 'react-icons/fi'
+import { FiArrowLeft, FiArrowRight, FiDelete, FiShare2, FiTrash2 } from 'react-icons/fi'
 import { FiPower, FiEdit, FiShoppingCart, FiHeart, FiArrowDown } from 'react-icons/fi'
 
 import api from '../../services/api'
@@ -11,7 +11,7 @@ import logoImage from '../../assets/logo.webp'
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 
-export default function ShoppingCart() {
+export default function AdressesAndOrders() {
 
     const [shoppingCart, setShoppingCart] = useState([]);
     const [page, setPage] = useState(1);
@@ -41,25 +41,52 @@ export default function ShoppingCart() {
     return (
         <>
             <Header />
-            <div className="shopping-cart-container" >
-                <h1>MY SHOPPING CART</h1>
-                <ul>
-                    {shoppingCart.map(shoppingCart => (
-                        <li className='shopping-cart' key={shoppingCart.id}>
-                            <div className='sc-img-and-name'>
-                                <img src={logoImage} alt="Shopping Cart Image" />
-                                <h2>Shopping Cart name: {shoppingCart.id}</h2>
-                            </div>
-                            <div className='sc-delete-and-price'>
-                                <button type="button">
-                                    <FiTrash2 size={30} color="#000000" />
-                                </button>
-                                <h3>{Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(shoppingCart.price)}</h3>
-                            </div>
-                        </li>
-                    ))}
-                </ul>
-                <button className='checkout-button'>Checkout</button>
+            <div className="adresses-orders-container" >
+                <h1>MY ORDERS</h1>
+                <div className='order-section'>
+                    <button type="button">
+                        <FiArrowLeft size={30} color="#000000" />
+                    </button>
+                    <div className='order-content'>
+                        <div className='first-line'>
+                            <h2>Order Name Example</h2>
+                            <h2>12/12/2012</h2>
+                        </div>
+                        <h3>Delivery status: coming to your home</h3>
+                        <h3>Delivery code: LA123456ABC</h3>
+                        <h3>Transport company: FEDEX</h3>
+                        <h3>Product name: Sculture example name</h3>
+                    </div>
+                    <button type="button">
+                        <FiArrowRight size={30} color="#000000" />
+                    </button>
+                    <h4>Total Orders: 10</h4>
+                </div>
+                <h1>MY ADRESSES</h1>
+                <div className='adresses-section'>
+                    <button type="button">
+                        <FiArrowLeft size={30} color="#000000" />
+                    </button>
+                    <div className='adresses-content'>
+                        <div className='first-line'>
+                            <h2>Adress Name Example</h2>
+                            <button type="button">
+                                <FiTrash2 size={30} color="#000000" />
+                            </button>
+                        </div>
+                        <h3>Salvador, Bahia</h3>
+                        <h3>Street name</h3>
+                        <h3>House number</h3>
+                        <h3>Neighborhood name</h3>
+                        <h3>Next to abandoned building</h3>
+                        <h3>CEP 12345678</h3>
+                    </div>
+                    <button type="button">
+                        <FiArrowRight size={30} color="#000000" />
+                    </button>
+                    <h4>Total Adresses: 10</h4>
+                </div>
+                <button className='new-adress-button'>New Adress</button>
             </div>
             <Footer />
 

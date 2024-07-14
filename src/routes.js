@@ -9,6 +9,8 @@ import CreateAccount from './pages/CreateAccount';
 import Product from './pages/Product';
 import Favorites from './pages/Favorites';
 import ShoppingCart from './pages/ShoppingCart';
+import AdressesAndOrders from './pages/AdressesAndOrders';
+import CreateAddress from './pages/CreateAdress';
 
 
 export default function Routes() {
@@ -17,11 +19,14 @@ export default function Routes() {
             <Switch>
                 <Route path="/" exact component={Login}/>
                 <Route path="/books" component={Books}/>
-                <Route path="/allproducts" component={AllProducts}/>
-                <Route path="/createaccount" component={CreateAccount}/>
+                <Route path="/all_products" component={AllProducts}/>
+                <Route path="/create_account" component={CreateAccount}/>
                 <Route path="/product" component={Product}/>
                 <Route path="/favorites" component={Favorites}/>
-                <Route path="/shoppingcart" component={ShoppingCart}/>
+                <Route path="/shopping_cart" component={ShoppingCart}/>
+                <Route path="/adresses_orders" component={AdressesAndOrders}/>
+                <Route path="/create_address" component={CreateAddress}/>
+                
                 {/* <Route path="/book/new/:bookId" component={NewBook}/> */}
             </Switch>
         </BrowserRouter>

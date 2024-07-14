@@ -1,0 +1,135 @@
+.adresses-orders-container {
+    height: 720px;
+    padding: 0px 270px;
+    margin: 0 100px;
+    background-color: #d9d9d9;
+    padding-bottom: 60px;
+}
+
+.adresses-orders-container h1{
+    color: #FFFFFF;
+    background-color: #004F3C;
+    height: 50px;
+    position: absolute;
+    padding-top: 15px;
+    font-size: 18px;
+    left: 0px;
+    width: 100%;
+    padding-left: 22%;
+}
+
+.adresses-orders-container .order-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+.adresses-orders-container .order-section button {
+    background-color: transparent;
+    border: none;
+}
+
+.adresses-orders-container .order-section h4 {
+    margin-top: 125px;
+    margin-left: 250px;
+    border-color: #004F3C;
+    border: 3px solid #004F3C;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+    width: 200px;
+    height: 50px;
+    color: #004F3C;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+
+.adresses-orders-container .order-section .order-content {
+    border: 2px solid #313131;
+    box-shadow: 0px 0px 1px 1px #313131;
+    border-radius: 4px;
+    width: 400px;
+    height: 170px;
+    padding: 10px;
+    margin: 20px;
+}
+
+.adresses-orders-container .order-section .order-content .first-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.adresses-orders-container .order-section .order-content h3 {
+    padding-bottom: 5px;
+}
+
+.adresses-orders-container .adresses-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+.adresses-orders-container .adresses-section .adresses-content {
+    border: 2px solid #313131;
+    box-shadow: 0px 0px 1px 1px #313131;
+    border-radius: 4px;
+    width: 400px;
+    height: 220px;
+    padding: 10px;
+    margin: 20px;
+}
+
+.adresses-orders-container .adresses-section .adresses-content .first-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 25px;
+}
+
+.adresses-orders-container .adresses-section button {
+    background-color: transparent;
+    border: none;
+}
+
+.adresses-orders-container .adresses-section .adresses-content h3 {
+    padding-bottom: 5px;
+}
+
+.adresses-orders-container .adresses-section h4 {
+    margin-top: 175px;
+    margin-left: 250px;
+    border-color: #004F3C;
+    border: 3px solid #004F3C;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+    width: 200px;
+    height: 50px;
+    color: #004F3C;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+.adresses-orders-container .new-adress-button {
+    background-color: #004F3C;
+    color: #FFFFFF;
+    width: 180px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none; 
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+
