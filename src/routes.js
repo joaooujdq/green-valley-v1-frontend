@@ -11,6 +11,7 @@ import Favorites from './pages/Favorites';
 import ShoppingCart from './pages/ShoppingCart';
 import AdressesAndOrders from './pages/AdressesAndOrders';
 import CreateAddress from './pages/CreateAdress';
+import ProfileSettings from './pages/ProfileSettings';
 
 
 export default function Routes() {
@@ -26,7 +27,7 @@ export default function Routes() {
                 <Route path="/shopping_cart" component={ShoppingCart}/>
                 <Route path="/adresses_orders" component={AdressesAndOrders}/>
                 <Route path="/create_address" component={CreateAddress}/>
-                
+                <Route path="/profile_settings" component={ProfileSettings}/>
                 {/* <Route path="/book/new/:bookId" component={NewBook}/> */}
             </Switch>
         </BrowserRouter>
