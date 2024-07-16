@@ -19,7 +19,7 @@ export default function ProfileSettings() {
         <>
             <Header />
 
-            <h1>PROFILE SETTINGS</h1>
+            <h1 className='profile-settings'>PROFILE SETTINGS</h1>
             <div className="profile-settings-container" >
                 <div className='settings-menu'>
                     <h2>My profile</h2>
@@ -32,21 +32,25 @@ export default function ProfileSettings() {
                     <h2>Delete your account</h2>
                 </div>
                 <div className='menu-sections'>
-                    
+
                     <div className='my-profile'>
                         <h3>My profile</h3>
-                        <div>
-                            <h4>Name: </h4>
-                            <input placeholder='profile name'></input>
-                            <h4>Email: </h4>
-                            <input placeholder='profile email'></input>
+                        <div className='row'>
+                            <div>
+                                <h4>Name: </h4>
+                                <input placeholder='profile name'></input>
+                            </div>
+                            <div>
+                                <h4>Email: </h4>
+                                <input placeholder='profile email'></input>
+
+                            </div>
                         </div>
                     </div>
-
                     <div className='conf-email'>
                         <h3>Confirm your email</h3>
                         <button>send code</button>
-                        <h4>your email has already been confirmed</h4>
+                        <h4>Your email has already been confirmed</h4>
                     </div>
 
                     <div className='change-email'>
@@ -94,21 +98,24 @@ export default function ProfileSettings() {
                             </div>
                         </div>
                     </div>
+                    <div className='row'>
+                        <div className='my-orders'>
+                            <h3>Access my orders</h3>
+                            <button>My orders</button>
+                        </div>
 
-                    <div className='my-orders'>
-                        <h3>Access my orders</h3>
-                        <button>My orders</button>
+                        <div className='my-addresses'>
+                            <h3>Access my addresses</h3>
+                            <button>My addresses</button>
+                        </div>
+
+                        <div className='delete'>
+                            <h3>Delete your account</h3>
+                            <button>Delete account</button>
+                        </div>
+
                     </div>
 
-                    <div className='my-addresses'>
-                        <h3>Access my addresses</h3>
-                        <button>My addresses</button>
-                    </div>
-
-                    <div className='delete'>
-                        <h3>Delete your account</h3>
-                        <button>Delete account</button>
-                    </div>
 
                 </div>
             </div>
